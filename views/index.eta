@@ -14,9 +14,6 @@
 <% it.messages.forEach((message) => { %>
   <li>
     <%= message.sender %>: <%= message.message %>
-    <form method="POST" action="/delete/<%= message.id %>">
-      <input type="submit" value="Delete" />
-    </form>
   </li>
 <% }); %>
 </ul>
